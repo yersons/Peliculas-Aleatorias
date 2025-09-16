@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peliculas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Peliculas Aleatorias</h1>
+</header>
+
+<div class="filters">
+    <select id="type">
+        <option value="movie">Película</option>
+        <option value="tv">Serie</option>
+    </select>
+    <select id="genre">
+        <option value="">Todos los géneros</option>
+        <option value="28">Acción</option>
+        <option value="12">Aventura</option>
+        <option value="16">Animación</option>
+        <option value="35">Comedia</option>
+        <option value="80">Crimen</option>
+        <option value="99">Documental</option>
+        <option value="18">Drama</option>
+        <option value="10751">Familia</option>
+        <option value="14">Fantasía</option>
+        <option value="36">Historia</option>
+        <option value="27">Horror</option>
+        <option value="9648">Misterio</option>
+        <option value="10749">Romance</option>
+        <option value="878">Ciencia ficción</option>
+        <option value="53">Suspenso</option>
+        <option value="10752">Guerra</option>
+        <option value="37">Western</option>
+    </select>
+    <label>
+        Año inicio
+        <input type="number" id="yearStart" min="1900" max="2025" value="2000">
+    </label>
+    <label>
+        Año fin
+        <input type="number" id="yearEnd" min="1900" max="2025" value="2025">
+    </label>
+    <button id="searchBtn">Buscar</button>
+</div>
+
+<main>
+    <div class="results" id="results"></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
